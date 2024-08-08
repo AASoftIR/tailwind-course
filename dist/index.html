@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To Stylist</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+    <style>
+      .stroke{
+        text-stroke: 0.5px rgb(27, 27, 199);
+        -webkit-text-stroke: 0.5px rgb(27, 27, 199);
+      }
+      .strokeBlack{
+        text-stroke: 0.8px black;
+        -webkit-text-stroke: 0.8px black;
+      }
+      .strokeWhite{
+        text-stroke: 0.8px white;
+        -webkit-text-stroke: 0.8px white;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 overflow-x-hidden">
+    <div
+      class="relative h-screen w-screen bg-[url(https://tailwind-sandy-iota.vercel.app/assets/main_bg_gif.gif)] bg-cover bg-center bg-no-repeat"
+    >
+      <div class="overlay h-screen w-screen"></div>
+      <!-- mobile nav btn -->
+      <a href="#!" class="peer">
+        <div
+          class="absolute left-2 top-2 z-30 grid h-min w-auto grid-cols-3 gap-2 *:duration-300 hover:cursor-pointer *:hover:!bg-white/60 "
+        >
+          <div class="h-[10px] w-[10px] bg-white"></div>
+          <div class="h-[10px] w-[10px] bg-white"></div>
+          <div class="h-[10px] w-[10px] bg-white"></div>
+          <div class="h-[10px] w-[10px] bg-white"></div>
+          <div class="h-[10px] w-[10px] bg-white"></div>
+          <div class="h-[10px] w-[10px] bg-white"></div>
+          <div class="h-[10px] w-[10px] bg-white"></div>
+          <div class="h-[10px] w-[10px] bg-white"></div>
+          <div class="h-[10px] w-[10px] bg-white"></div>
+        </div>
+      </a>
+
+      <!-- mobile nav -->
+
+      <div
+        class="absolute left-0 top-0 z-[500] flex h-screen w-[70vw] -translate-x-full flex-col bg-[url(https://tailwind-sandy-iota.vercel.app/assets/main_nav_bg.svg)] bg-cover bg-right bg-no-repeat pz-1 py-2 text-center font-pro text-5xl font-semibold text-white duration-500 *:block *:uppercase *:duration-200 *:first-letter:text-6xl *:first-letter:text-slate-900 peer-focus:translate-x-0 lg:hidden"
+      >
+        <a
+          href="#"
+          class="active box-content border-b-2 border-white/70 py-5 hover:bg-white hover:text-black"
+          >welcome</a
+        >
+        <a
+          href="#simple"
+          class="box-content border-b-2 border-white/70 py-5 hover:bg-white hover:text-black"
+          >we're simple</a
+        >
+        <a
+          href="blog.html"
+          class="box-content border-b-2 border-white/70 py-5 hover:bg-white hover:text-black"
+          >blog</a
+        >
+        <a
+          href="about.html"
+          class="box-content border-b-2 border-white/70 py-5 hover:bg-white hover:text-black"
+          >about us</a
+        >
+        <a
+          href="contact.html"
+          class="box-content border-b-2 border-white/70 py-5 hover:bg-white hover:text-black"
+          >contact us</a
+        >
+      </div>
+      <!-- desktop nav -->
+      <div
+        class="relative z-30 mx-auto hidden h-min w-2/3 items-center justify-between px-2 py-4 font-inter uppercase text-white lg:flex "
+      >
+        <a
+          href="#"
+          class="active box-content pb-4 text-xl duration-500 hover:text-white/50"
+          >welcome</a
+        >
+        <a
+          href="#simple"
+          class="box-content pb-4 text-xl duration-500 hover:text-white/50"
+          >we're simple</a
+        >
+        <a
+          href="blog.html"
+          class="box-content pb-4 text-xl duration-500 hover:text-white/50"
+          >blog</a
+        >
+        <a
+          href="about.html"
+          class="box-content pb-4 text-xl duration-500 hover:text-white/50"
+          >about us</a
+        >
+        <a
+          href="contact.html"
+          class="box-content pb-4 text-xl duration-500 hover:text-white/50"
+          >contact us</a
+        >
+      </div>
+
+      <label for="a" class="absolute right-2 top-4 z-50 flex"
+        ><svg
+          class="h-auto w-8 fill-white"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+          />
+        </svg>
+        <input
+          id="a"
+          type="text"
+          class=" ml-2 scale-x-0 border-b-2 border-white bg-transparent font-grenze font-bold text-white caret-red-800 duration-150 focus:scale-x-100 focus:outline-none focus:ring-0"
+        />
+      </label>
+      <!-- lines -->
+      <div class="absolute left-16 top-0 z-30 h-full w-[2px]  bg-white/70"></div>
+      <div class=" absolute w-full h-[2px] bg-white/70 left-0 top-16"></div>
+
+      <!-- desktop img -->
+      <div
+        class="absolute left-[15%] top-1/4 z-30 hidden h-min w-1/4 lg:block"
+      >
+        <img src="https://tailwind-sandy-iota.vercel.app/assets/main_start_bg.svg" class="h-auto w-full" alt="" />
+      </div>
+
+      <!-- desktop btn -->
+      <div
+        class="absolute bottom-24 left-[15%] z-30 hidden items-end justify-between gap-x-8 font-inter  text-white lg:flex"
+      >
+        <a href="#simple" class="flex text-lg uppercase"
+          ><img
+            src="https://tailwind-sandy-iota.vercel.app/assets/arrow_pointing.svg"
+            class="h-auto w-6 rotate-180 animate-moverY"
+            alt=""
+          />who are we?</a
+        >
+        <a href="about.html" class="flex text-lg uppercase"
+          ><img
+            src="https://tailwind-sandy-iota.vercel.app/assets/main_icon.png"
+            class="h-auto w-6 animate-pulse"
+            alt=""
+          />about us</a
+        >
+      </div>
+
+      <!-- mobile img -->
+      <img
+        src="https://tailwind-sandy-iota.vercel.app/assets/wordart/hacker.png"
+        alt=""
+        class="absolute bottom-0 left-0 h-auto w-full lg:hidden"
+      />
+    </div>
+
+
+
+
+    <!-- section simple -->
+    <div
+      class="relative grid h-[50vh] w-full grid-cols-2 py-0 sm:h-[40vh] md:h-[78vh] lg:!h-screen"
+    >
+      <img
+        class="absolute left-0 top-0 h-full object-cover"
+        src="https://tailwind-sandy-iota.vercel.app/assets/bgjar_light.png"
+      />
+
+      <!-- mobile simple section -->
+      <div
+        class="relative z-50 flex h-full w-full justify-center lg:hidden lg:items-center notLg:items-start"
+      >
+        <img
+          src="https://tailwind-sandy-iota.vercel.app/assets/simple.png"
+          alt=""
+          class="h-auto w-full origin-top scale-150 object-cover"
+        />
+      </div>
+
+      <!-- desktop simple section -->
+      <div
+        class="relative scale-100 lg:-ml-12 lg:origin-top-left lg:scale-[1.4] notLg:hidden"
+      >
+        <p
+          class="text-white font-valencia text-5xl uppercase leading-[1] tracking-tighter lg:text-7xl notLg:ml-16"
+        >
+          <span
+            class="inline-block bg-gradient-to-b from-white/70 to-blue-700 bg-clip-text text-[18rem] !text-transparent lg:text-[20rem] notLg:absolute notLg:-left-6 notLg:top-[22%]"
+            >s</span
+          >imple is
+        </p>
+        <p
+          class="font-valencia text-5xl uppercase lg:indent-[15rem] lg:text-7xl notLg:ml-16 notLg:leading-relaxed dark:text-white"
+        >
+          always
+        </p>
+        <p
+          class="font-valencia text-5xl uppercase lg:indent-[25rem] lg:text-7xl notLg:ml-16 notLg:leading-relaxed dark:text-white"
+        >
+          better
+        </p>
+      </div>
+
+      <div class="relative z-20 flex h-full items-center justify-center">
+        <img
+          src="https://tailwind-sandy-iota.vercel.app/assets/main_bg2.png"
+          class="h-auto w-[90%] object-cover ml-3 notLg:right-0 notLg:bottom-2"
+          alt=""
+        />
+      </div>
+    </div>
+
+
+    <!-- section we are different -->
+    <div class="w-full max-h-screen notLg:max-h-min flex px-1 py-1 font-valencia overflow-hidden notLg:flex-col relative z-50">
+      <div class="lg:w-2/3 w-full">
+        <div class="w-full flex flex-col text-center text-[19vw] lg:hidden py-4">
+          <h1 class="bg-clip-text bg-[url(https://tailwind-sandy-iota.vercel.app/assets/text_bg_galaxy.jpg)] text-transparent bg-cover bg-no-repeat bg-center leading-[1] tracking-tighter"><span class="strokeBlack">WE</span> <span class="strokeWhite">ARE</span></h1>
+          <h1 class="bg-clip-text bg-[url(https://tailwind-sandy-iota.vercel.app/assets/text_bg_galaxy.jpg)] text-transparent bg-cover bg-no-repeat bg-center leading-[1] tracking-tighter"><span class="strokeBlack">DIFFERENT</span></h1>
+        </div>
+        <p class="text-center inline-block">
+          <h1 class="text-[30vw] tracking-tighter notLg:!hidden leading-[1] text-transparent bg-clip-text  bg-[url(https://tailwind-sandy-iota.vercel.app/assets/text_bg_galaxy.jpg)] bg-center bg-cover bg-no-repeat !inline stroke">W</h1>
+          <h3 class="text-[7vw] tracking-tighter notLg:!hidden leading-[1] text-transparent bg-clip-text  bg-[url(https://tailwind-sandy-iota.vercel.app/assets/text_bg_galaxy.jpg)] bg-center bg-cover bg-no-repeat !inline stroke">ARE</h3>
+          <h1 class="text-[30vw] tracking-tighter notLg:!hidden leading-[1] text-transparent bg-clip-text  bg-[url(https://tailwind-sandy-iota.vercel.app/assets/text_bg_galaxy.jpg)] bg-center bg-cover bg-no-repeat !inline stroke">E</h1>
+
+        </p>
+        <p class="text-center inline-block">
+          <h1 class="text-[10vw] tracking-tighter text-transparent bg-clip-text bg-[url(https://tailwind-sandy-iota.vercel.app/assets/text_bg_galaxy.jpg)] bg-center bg-cover bg-no-repeat stroke indent-[15vw] notLg:!hidden">DIFFERENT</h1>
+
+        </p>
+      </div>
+      <!-- cards -->
+      <div class="w-1/3 h-[120%] columns-2 *:bg-white *:flex *:flex-col *:p-1  *:font-inter -translate-y-1/2 notLg:hidden">
+        <div class="w-full rounded-2xl overflow-hidden h-min mb-3 mt-24">
+          <img src="https://picsum.photos/200" class="w-auto h-1/2 object-cover rounded-t-2xl " alt="">
+          <h1 class=" font-bold text-[1.2vw] capitalize px-4 pt-3">We are awesome</h1>
+          <p class="py-2 font-bold text-sm capitalize px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique reiciendis temporibus quis cupiditate reprehenderit.</p>
+        </div>
+        <div class="w-full rounded-2xl overflow-hidden h-min mb-3">
+          <img src="https://picsum.photos/200" class="w-auto h-1/2 object-cover rounded-t-2xl " alt="">
+          <h1 class=" font-bold text-[1.2vw] capitalize px-4 pt-3">We are awesome</h1>
+          <p class="py-2 font-bold text-sm capitalize px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique reiciendis temporibus quis cupiditate reprehenderit.</p>
+        </div>
+        <div class="w-full rounded-2xl overflow-hidden h-min mb-3">
+          <img src="https://picsum.photos/200" class="w-auto h-1/2 object-cover rounded-t-2xl " alt="">
+          <h1 class=" font-bold text-[1.2vw] capitalize px-4 pt-3">We are awesome</h1>
+          <p class="py-2 font-bold text-sm capitalize px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique reiciendis temporibus quis cupiditate reprehenderit.</p>
+        </div>
+        <div class="w-full rounded-2xl overflow-hidden h-min mb-3">
+          <img src="https://picsum.photos/200" class="w-auto h-1/2 object-cover rounded-t-2xl " alt="">
+          <h1 class=" font-bold text-[1.2vw] capitalize px-4 pt-3">We are awesome</h1>
+          <p class="py-2 font-bold text-sm capitalize px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique reiciendis temporibus quis cupiditate reprehenderit.</p>
+        </div>
+        <div class="w-full rounded-2xl overflow-hidden h-min mb-3">
+          <img src="https://picsum.photos/200" class="w-auto h-1/2 object-cover rounded-t-2xl " alt="">
+          <h1 class=" font-bold text-[1.2vw] capitalize px-4 pt-3">We are awesome</h1>
+          <p class="py-2 font-bold text-sm capitalize px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique reiciendis temporibus quis cupiditate reprehenderit.</p>
+        </div>
+        <div class="w-full rounded-2xl overflow-hidden h-min mb-3">
+          <img src="https://picsum.photos/200" class="w-auto h-1/2 object-cover rounded-t-2xl " alt="">
+          <h1 class=" font-bold text-[1.2vw] capitalize px-4 pt-3">We are awesome</h1>
+          <p class="py-2 font-bold text-sm capitalize px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique reiciendis temporibus quis cupiditate reprehenderit.</p>
+        </div>
+        <div class="w-full rounded-2xl overflow-hidden h-min mb-3">
+          <img src="https://picsum.photos/200" class="w-auto h-1/2 object-cover rounded-t-2xl " alt="">
+          <h1 class=" font-bold text-[1.2vw] capitalize px-4 pt-3">We are awesome</h1>
+          <p class="py-2 font-bold text-sm capitalize px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique reiciendis temporibus quis cupiditate reprehenderit.</p>
+        </div>
+        <div class="w-full rounded-2xl overflow-hidden h-min mb-3">
+          <img src="https://picsum.photos/200" class="w-auto h-1/2 object-cover rounded-t-2xl " alt="">
+          <h1 class=" font-bold text-[1.2vw] capitalize px-4 pt-3">We are awesome</h1>
+          <p class="py-2 font-bold text-sm capitalize px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique reiciendis temporibus quis cupiditate reprehenderit.</p>
+        </div>
+      </div>
+
+      <div class="lg:hidden block w-screen py-2">
+        <div class="carousel carousel-center rounded-box !font-pro">
+          <div class="carousel-item rounded-2xl overflow-hidden flex flex-col">
+
+                <img src="https://picsum.photos/500" class="aspect-auto max-h-[60vh] object-cover rounded-t-2xl " alt="">
+                <h1 class=" font-bold text-3xl lg:text-[9vw] capitalize px-4 pt-3">We are awesome</h1>
+
+
+          </div>
+          <div class="carousel-item rounded-2xl overflow-hidden flex flex-col">
+              <img src="https://picsum.photos/500" class="aspect-auto max-h-[60vh] object-cover rounded-t-2xl " alt="">
+              <h1 class=" font-bold text-3xl lg:text-[9vw] capitalize px-4 pt-3">We are awesome</h1>
+
+          </div>
+          <div class="carousel-item rounded-2xl overflow-hidden flex flex-col">
+              <img src="https://picsum.photos/500" class="aspect-auto max-h-[60vh] object-cover rounded-t-2xl " alt="">
+              <h1 class=" font-bold text-3xl lg:text-[9vw] capitalize px-4 pt-3">We are awesome</h1>
+
+          </div>
+          <div class="carousel-item rounded-2xl overflow-hidden flex flex-col">
+              <img src="https://picsum.photos/500" class="aspect-auto max-h-[60vh] object-cover rounded-t-2xl " alt="">
+              <h1 class=" font-bold text-3xl lg:text-[9vw] capitalize px-4 pt-3">We are awesome</h1>
+
+          </div>
+          <div class="carousel-item rounded-2xl overflow-hidden flex flex-col">
+              <img src="https://picsum.photos/500" class="aspect-auto max-h-[60vh] object-center rounded-t-2xl " alt="">
+              <h1 class=" font-bold text-3xl lg:text-[9vw] capitalize px-4 pt-3">We are awesome</h1>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- section the best -->
+     <div class="w-full h-[90vh]  lg:h-screen flex justify-center items-center relative">
+      <img class="absolute w-full h-auto rotate-180 -top-16 left-0 z-30" src="https://tailwind-sandy-iota.vercel.app/assets/wave_main_dark.svg" />
+      <img src="https://tailwind-sandy-iota.vercel.app/assets/main_bg.png" class="w-screen h-auto absolute top-0 left-0 blur-xl z-10" alt="">
+      <div class="w-screen bg-blue-900 h-[15vh] z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+      <div class="w-1/2 lg:w-1/3 h-[30vh] translate-[5vh] sm:trasnlate-y-0 sm:h-[40vh] md:h-[60vh] bg-[url(https://tailwind-sandy-iota.vercel.app/assets/main_bg.png)] justify-center items-center relative font-valencia z-50 bg-cover bg-center bg-no-repeat drop-shadow-[0_0_500px_black] flex flex-col">
+        <h1 class="text-[10vw] tracking-wider leading-[1] text-blue-400">THE</h1>
+        <h1 class="text-[10vw] tracking-[.18rem] -mt-6 leading-[0.4] text-blue-400">BEST</h1>
+        <h1 class="text-[10vw] tracking-tight leading-[1.1] text-white">CODE</h1>
+      </div>
+     </div>
+
+     <section
+     class="w-screen mx-auto h-96 bg-slate-950 flex justify-center items-center overflow-hidden relative
+      z-50"
+   >
+     <div
+       class="w-full h-screen mx-auto rounded-lg p-2 grid grid-cols-3 md:grid-cols-4 divide-x divide-white auto-rows-auto -rotate-[22deg] space-y-3 text-shadow mt-24"
+     >
+
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Shop
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Contact
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Testimonial
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Home
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         About
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Footer
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Shop
+       </div>
+       <div
+         class="bg-transparent duration-300 grow shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Contact
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Testimonial
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Home
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         About
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Footer
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Shop
+       </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Contact
+
+     </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Contact
+
+     </div>
+       <div
+         class="bg-transparent duration-300 grow-0 shrink-0 text-center text-white hover:text-black/70 capitalize flex justify-center items-center text-2xl font-serif before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:bottom-0 before:hover:bg-[#0F4C75] before:bg-transparent before:skew-y-[15deg] before:-z-20 before:duration-300 z-20 relative"
+       >
+         Contact
+
+     </div>
+   </section> 
+
+   <footer class="w-full min-h-[35vh] relative flex justify-center items-end ">
+		<svg class="w-[100vw] h-auto  absolute bottom-0 left-0 z-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,0L34.3,26.7C68.6,53,137,107,206,138.7C274.3,171,343,181,411,165.3C480,149,549,107,617,117.3C685.7,128,754,192,823,224C891.4,256,960,256,1029,240C1097.1,224,1166,192,1234,154.7C1302.9,117,1371,75,1406,53.3L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+		<h1 class="relative z-50 text-black text-xl md:text-2xl lg:text-5xl pb-2 md:pb-5 font-grenze capitalize">&copy;2024 tailwind css course. All Rights Reserved</h1>
+	</footer>
+  </body>
+</html>

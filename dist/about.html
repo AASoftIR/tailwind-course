@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About US</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+
+		<style>
+			html,
+			body {
+				width: 100vw;
+				height: min-content;
+			}
+
+			body {
+				overflow-x: hidden;
+				overflow-y: scroll;
+			}
+			@media (min-width: 650px) {
+				body {
+					background-image: none !important;
+					background: rgb(2 6 23);
+				}
+			}
+		</style>
+	</head>
+	<body
+		class="bg-[url(https://tailwind-sandy-iota.vercel.app/assets/about_mobile_bg.svg)] bg-slate-950 dark:text-white bg-cover bg-center bg-no-repeat"
+	>
+		<div
+			class="fixed top-1/2 rotate-90 md:rotate-0 left-[-40px] md:left-4 flex gap-x-3 font-grenze bg-white md:bg-transparent rounded-t-xl px-2 py-2 md:p-0 md:rounded-t-none text-black md:text-white items-center"
+		>
+			<img
+				src="https://tailwind-sandy-iota.vercel.app/assets/arrow_pointing.svg"
+				class="rotate-[-90deg] hidden md:block md:animate-mover w-6 lg:w-8 h-auto"
+				alt=""
+			/>
+			<div class="md:hidden w-6 h-auto animate-moverY">
+				<svg
+					class="!w-6 !h-auto"
+					version="1.1"
+					id="Capa_1"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 0 48.338 48.338"
+					xml:space="preserve"
+				>
+					<g>
+						<path
+							d="M26.436,2.3c-1.253-3.067-3.285-3.067-4.539,0l-7.654,18.739c-1.254,3.067-0.212,4.359,2.327,2.884
+l2.867-1.666c0.955-0.555,1.428-0.158,1.221,0.927c-0.355,1.866-0.727,5.212-0.491,10.592c-0.099,4.477,0.316,8.115,0.642,10.216
+c0.169,1.091,0.317,2.956,1.001,3.823c0.549,0.697,4.166,0.697,4.715,0c0.684-0.867,0.766-2.742,0.896-3.838
+c0.285-2.396,0.713-6.558,0.747-10.201c0.052-5.459-0.273-8.746-0.567-10.574c-0.175-1.09,0.342-1.5,1.297-0.945
+c0.786,0.457,1.784,1.036,2.869,1.666c2.539,1.475,3.582,0.184,2.328-2.884L26.436,2.3z"
+						/>
+					</g>
+				</svg>
+			</div>
+			<a href="index.html" class="">Go Back?</a>
+		</div>
+
+		<div
+			class="w-[85%] flex flex-col mx-auto h-min relative justify-center items-center"
+		>
+			<h1 class="text-[40vw] uppercase h-min leading-[0.6] font-grenze">who</h1>
+			<div
+				class="font-valencia flex justify-between items-center w-[80%] text-[7vw] leading-[2] md:text-[7.2vw]"
+			>
+				<h2 class="uppercase">are</h2>
+				<h2 class="uppercase">.</h2>
+				<h2 class="uppercase">we</h2>
+			</div>
+		</div>
+
+		<!-- see wordart and team gif -->
+		<div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+			<img src="https://tailwind-sandy-iota.vercel.app/assets/wordart/see.png" class="w-[90%] h-auto" alt="" />
+			<div
+				class="relative rounded-xl shadow-2xl shadow-blue-500 rotate-[5deg] hidden md:block"
+			>
+				<img src="https://tailwind-sandy-iota.vercel.app/assets/team_gif.gif" class="rounded-xl" alt="" />
+				<div
+					class="caption absolute bottom-0 left-0 bg-slate-950 rounded-b-xl w-full px-4 text-emerald-50"
+				>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+					voluptatum nihil, optio atque vel voluptas! Blanditiis aliquid earum
+					rem consectetur odit harum
+				</div>
+			</div>
+		</div>
+
+		<!-- the magic wordart -->
+		<div class="w-full">
+			<img src="https://tailwind-sandy-iota.vercel.app/assets/wordart/the_magic.png" class="w-full mt-16" alt="" />
+		</div>
+
+		<!-- question_mark -->
+		<div class="w-[60%] flex justify-center items-center mx-auto">
+			<img
+				src="https://tailwind-sandy-iota.vercel.app/assets/wordart/question_mark.png"
+				class="w-full h-auto"
+				alt=""
+			/>
+		</div>
+
+		<!-- mobile gif -->
+		<div
+			class="w-[75%] block md:hidden relative rounded-xl shadow-2xl shadow-blue-500 rotate-[5deg] mx-auto"
+		>
+			<img src="https://tailwind-sandy-iota.vercel.app/assets/team_gif.gif" class="rounded-xl w-full" alt="" />
+			<div
+				class="caption absolute bottom-0 left-0 bg-slate-950 rounded-b-xl w-full px-4 text-emerald-50"
+			>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+				voluptatum nihil, optio atque vel voluptas! Blanditiis aliquid earum rem
+				consectetur odit harum
+			</div>
+		</div>
+		<!-- desktop: who is the boss -->
+		<div
+			class="w-full justify-start items-start relative h-[500px] hidden lg:flex"
+		>
+			<div class="flex absolute top-2 left-0 z-10 max-w-[70%] pl-2">
+				<div
+					class="bg-blue-700 rounded-xl px-4 py-3 font-valencia uppercase text-3xl m-auto text-center duration-300 w-auto rotate-180 mr-2 h-4/6"
+					style="writing-mode: vertical-lr"
+				>
+					who is the boss?
+				</div>
+
+						<div class="h-full w-full bg-base-100 py-4 px-6 rounded-xl shadow-xl" style="font-family: Inter">
+	
+									<img
+										src="https://tailwind-sandy-iota.vercel.app/assets/ceo_shot.png"
+										alt=""
+										class="w-48 h-auto float-left"
+										style="shape-outside: url('https://tailwind-sandy-iota.vercel.app/assets/ceo_shot.png'); shape-margin: 5px"
+									/>
+									<p class="text-md xl:text-2xl text-white text-pretty first-letter:text-3xl xl:first-letter:text-5xl first-letter:animate-pulse first-letter:text-black/90 first-letter:font-bold first-letter:mr-2">
+										Meet Our CEO Say hello to our visionary CEO, Alex Thompson! With a
+										passion for minimalistic design and a knack for turning complex
+										ideas into user-friendly solutions, Alex leads our team with
+										boundless energy and creativity. With over a decade of experience in
+										the tech industry, Alex has a proven track record of driving
+										innovation and excellence. Beyond the world of code and design, Alex
+										is a tech enthusiast who loves to explore the latest trends and
+										gadgets. A self-proclaimed sci-fi aficionado, Alex often draws
+										inspiration from futuristic narratives to push the boundaries of web
+										development. Alex's leadership style is as dynamic as it is
+										approachable, fostering a collaborative environment where great
+										ideas thrive. Join us and get inspired by Alex's unique blend of
+										innovation, fun, and relentless pursuit of simplicity. Whether he's
+										devising new strategies or engaging with our community, Alex's
+										commitment to empowering developers shines through every aspect of
+										our course.
+									</p>
+				
+					</div>
+
+			</div>
+			<img
+				src="https://tailwind-sandy-iota.vercel.app/assets/wordart/ceo.png"
+				class="absolute top-0 right-0 scale-75 xl:scale-125"
+				alt=""
+			/>
+		</div>
+		<!-- mobile: who is the boss -->
+		 <div class="w-full flex flex-col justify-center items-center lg:hidden my-12">
+			<div class="w-[90%] bg-blue-950 rounded-3xl text-center flex justify-center items-center text-8xl py-6 text-black relative z-50">
+				CEO
+			</div>
+
+			<div class="w-[90%] min-h-[70vh] relative mt-12">
+				<h1 class="absolute left-0 top-2 text-9xl font-valencia uppercase">who <br/> is</h1>
+				<h1 class="absolute right-0 top-2 text-7xl font-valencia uppercase text-center">the <br/> boss</h1>
+				<img src="https://tailwind-sandy-iota.vercel.app/assets/wordart/ceo_mobile.png" class="w-full h-auto absolute bottom-0 left-0" alt="">
+
+			</div>
+			
+			<div class="w-[90%]">
+				<div class="my-4 w-full">
+					<div class=" bg-base-100 w-full py-4 px-6 rounded-xl shadow-xl" style="font-family: Inter">
+
+								<img
+									src="https://tailwind-sandy-iota.vercel.app/assets/ceo_shot.png"
+									alt=""
+									class="w-44 md:w-36 h-auto float-left"
+									style="shape-outside: url('https://tailwind-sandy-iota.vercel.app/assets/ceo_shot.png'); shape-margin: 5px"
+								/>
+								<p class="text-md text-white text-pretty">
+									Meet Our CEO Say hello to our visionary CEO, Alex Thompson! With a
+									passion for minimalistic design and a knack for turning complex
+									ideas into user-friendly solutions, Alex leads our team with
+									boundless energy and creativity. With over a decade of experience in
+									the tech industry, Alex has a proven track record of driving
+									innovation and excellence. Beyond the world of code and design, Alex
+									is a tech enthusiast who loves to explore the latest trends and
+									gadgets. A self-proclaimed sci-fi aficionado, Alex often draws
+									inspiration from futuristic narratives to push the boundaries of web
+									development. Alex's leadership style is as dynamic as it is
+									approachable, fostering a collaborative environment where great
+									ideas thrive. Join us and get inspired by Alex's unique blend of
+									innovation, fun, and relentless pursuit of simplicity. Whether he's
+									devising new strategies or engaging with our community, Alex's
+									commitment to empowering developers shines through every aspect of
+									our course.
+								</p>
+					</div> 
+				</div>
+			</div>
+		 </div>
+
+		<!-- browser mockup -->
+		<div class="w-full flex justify-center items-center relative">
+			<svg
+				viewBox="0 0 200 200"
+				xmlns="http://www.w3.org/2000/svg"
+				class="w-1/6 h-auto absolute top-0 left-0 scale-150 blur-2xl"
+			>
+				<path
+					fill="#3282B8"
+					d="M51.5,-54.3C63.3,-39.8,66.9,-19.9,68,1.1C69.1,22.2,67.8,44.3,56.1,54.2C44.3,64,22.2,61.5,3.3,58.2C-15.6,54.9,-31.1,50.8,-39.7,41C-48.3,31.1,-50,15.6,-48.4,1.5C-46.9,-12.5,-42.3,-25.1,-33.7,-39.6C-25.1,-54.1,-12.5,-70.7,3.7,-74.4C19.9,-78.1,39.8,-68.9,51.5,-54.3Z"
+					transform="translate(100 100)"
+				/>
+			</svg>
+
+			<svg
+				viewBox="0 0 200 200"
+				xmlns="http://www.w3.org/2000/svg"
+				class="w-1/6 h-auto absolute bottom-0 right-16 scale-150 blur-2xl"
+			>
+				<path
+					fill="#3282B8"
+					d="M51.5,-54.3C63.3,-39.8,66.9,-19.9,68,1.1C69.1,22.2,67.8,44.3,56.1,54.2C44.3,64,22.2,61.5,3.3,58.2C-15.6,54.9,-31.1,50.8,-39.7,41C-48.3,31.1,-50,15.6,-48.4,1.5C-46.9,-12.5,-42.3,-25.1,-33.7,-39.6C-25.1,-54.1,-12.5,-70.7,3.7,-74.4C19.9,-78.1,39.8,-68.9,51.5,-54.3Z"
+					transform="translate(100 100)"
+				/>
+			</svg>
+
+			<div class="w-[95%] md:w-[85%] mx-auto">
+				<section class="w-full flex flex-col my-4 justify-center items-center relative">
+					<h1 class="block text-[5vw] text-white">G<span class="text-red-600">o</span><span class="text-blue-600">o</span class="text-red-600"><span class="text-orange-600">g</span><span class="text-blue-600">l</span><span>e</span> <span>U</span><span>S</span></h1>
+					<div class="box w-full">
+						<div
+							class="mockup-browser bg-base-300 border w-[90%] overflow-hidden mx-auto"
+						>
+							<div class="mockup-browser-toolbar">
+								<div class="input !w-1/2 text-lg">
+									Who are these people and what is this company?
+								</div>
+							</div>
+							<div class="bg-gray-50 flex justify-center px-2 py-6">
+								<div class="grid grid-cols-1 divide-y gap-y-1 w-full">
+									<div class="bg-white rounded-sm border border-gray-300 p-4">
+										<h3 class="text-[1.4vw] font-bold text-blue-600 underline">
+											Our Mission
+										</h3>
+										<p class="text-gray-600 text-[1.2vw]">
+											We are dedicated to making web development accessible and
+											enjoyable, empowering developers with the tools and
+											knowledge they need to create stunning websites
+											effortlessly.
+										</p>
+									</div>
+
+									<div class="bg-white rounded-sm border border-gray-300 p-4">
+										<h3 class="text-[1.4vw] font-bold text-blue-600 underline">
+											Our Vision
+										</h3>
+										<p class="text-gray-600 text-[1.2vw]">
+											We envision a world where simplicity drives innovation,
+											where developers can build responsive, modern websites
+											without getting bogged down by complexity.
+										</p>
+									</div>
+
+									<div class="bg-white rounded-sm border border-gray-300 p-4">
+										<h3 class="text-[1.4vw] font-bold text-blue-600 underline">
+											Our CEO
+										</h3>
+										<p class="text-gray-600 text-[1.2vw]">
+											Leading the charge is our CEO, Alex Thompson, a tech
+											enthusiast with a passion for minimalistic design and a
+											knack for turning complex ideas into intuitive solutions.
+										</p>
+									</div>
+
+									<div class="bg-white rounded-sm border border-gray-300 p-4">
+										<h3 class="text-[1.4vw] font-bold text-blue-600 underline">
+											Our Team
+										</h3>
+										<p class="text-gray-600 text-[1.2vw]">
+											Our diverse team of experts shares a common goal: to
+											create a learning experience that is as enriching as it is
+											enjoyable, fostering a collaborative and innovative
+											environment.
+										</p>
+									</div>
+
+									<div class="join text-[1.4vw]">
+										<button class="join-item btn">1</button>
+										<button class="join-item btn">2</button>
+										<button class="join-item btn btn-disabled">...</button>
+										<button class="join-item btn">99</button>
+										<button class="join-item btn">100</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<!-- our services -->
+		<div class="w-full mt-4">
+			<h1
+				class="text-center text-6xl lg:text-9xl bg-clip-text bg-center bg-cover uppercase text-transparent textClip my-4 relative z-10"
+			>
+				our services
+			</h1>
+
+			<img
+				class="absolute w-[35vw] h-[35vh] lg:w-[100vw] lg:h-[100vh] scale-50 lg:scale-[1.6] blur-lg lg:blur-[60px] z-[5] xl:scale-[2] xl:blur-[100px]"
+				src="https://tailwind-sandy-iota.vercel.app/assets/blob.svg "
+			/>
+			<img
+				src="https://tailwind-sandy-iota.vercel.app/assets/about_bg.svg"
+				class="mr-[-10px] h-auto absolute z-[4] opacity-50 lg:opacity-85"
+				alt=""
+			/>
+			<div
+				class="rounded-tr-[100px] rounded-bl-[100px] w-[95%] lg:w-[70%] mx-auto py-2 flex justify-center items-center bg-slate-800 relative z-30"
+			>
+				<section
+					class="grid content-center items-center w-[99%] lg:w-[85%] grid-cols-3 gap-0 lg:gap-4 relative mobile:flex mobile:justify-between"
+				>
+					<div class="flex flex-col space-y-4 justify-self-end mobile:hidden">
+						<div class="text-right" dir="rtl">
+							<img src="./htmx.svg" class="!w-12 !h-auto" alt="" />
+							<h3 class="font-bold text-[1.2vw] font-valencia">
+								Web Development
+							</h3>
+							<p
+								class="text-[1vw] text-pretty first-letter:text-white first-letter:font-bold first-letter:text-xl"
+								style="font-family: Inter"
+							>
+								We specialize in creating modern and responsive web applications
+								using the latest technologies.
+							</p>
+						</div>
+
+						<div class="text-right" dir="rtl">
+							<img src="./htmx.svg" class="!w-12 !h-auto" alt="" />
+							<h3
+								class="font-bold text-[1.2vw]"
+								style="font-family: 'De Valencia'"
+							>
+								E-commerce Solutions
+							</h3>
+							<p
+								class="text-[1vw] text-pretty first-letter:text-white first-letter:font-bold first-letter:text-xl"
+								style="font-family: Inter"
+							>
+								We design and develop custom e-commerce solutions for businesses
+								of all sizes.
+							</p>
+						</div>
+
+						<div class="text-right" dir="rtl">
+							<img src="./htmx.svg" class="!w-12 !h-auto" alt="" />
+							<h3
+								class="font-bold text-[1.2vw]"
+								style="font-family: 'De Valencia'"
+							>
+								Mobile App Development
+							</h3>
+							<p
+								class="text-[1vw] text-pretty first-letter:text-white first-letter:font-bold first-letter:text-xl"
+								style="font-family: Inter"
+							>
+								We create custom mobile apps for Android and iOS devices.
+							</p>
+						</div>
+
+						<div class="text-right" dir="rtl">
+							<img src="./htmx.svg" class="!w-12 !h-auto" alt="" />
+							<h3
+								class="font-bold text-[1.2vw]"
+								style="font-family: 'De Valencia'"
+							>
+								Web Design
+							</h3>
+							<p
+								class="text-[1vw] text-pretty first-letter:text-white first-letter:font-bold first-letter:text-xl"
+								style="font-family: Inter"
+							>
+								We specialize in creating modern and responsive web designs that
+								are tailored to your business needs.
+							</p>
+						</div>
+					</div>
+					<div class="mockup-phone border-primary ">
+						<div class="camera"></div>
+						<div class="display relative">
+							<img
+								src="https://tailwind-sandy-iota.vercel.app/assets/mobile_mockup_gif.gif"
+								class="absolute z-20 top-0 left-0 h-full w-full bg-center"
+								alt=""
+							/>
+							<div
+								class="artboard artboard-demo phone-1 !w-[150px] !h-[310px] xl:!w-[250px] xl:!h-[477px] xl:ml-[-5px]"
+							>
+								<div class="w-[90%] flex flex-col relative z-30 h-full">
+									<div
+										class="flex absolute bottom-4 left-0 w-full px-6 justify-between items-center *:hover:cursor-pointer"
+									>
+										<div
+											class="circle w-3 h-3 lg:w-8 lg:h-8 rounded-full border-2 border-white bg-transparent"
+										></div>
+										<div
+											class="square w-3 h-3 lg:w-8 lg:h-8 border-2 border-white"
+										></div>
+										<div
+											class="triangle size-0 border-b-[15px] border-r-[7.5px] border-l-[7.5px] lg:border-b-[30px] lg:border-r-[15px] lg:border-l-[15px] border-transparent border-b-white -rotate-90"
+										></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-4 justify-self-end mobile:w-1/3">
+						<div class="text-left">
+							<img src="./htmx.svg" class="!w-12 !h-auto" alt="" />
+							<h3
+								class="font-bold text-[1.2vw]"
+								style="font-family: 'De Valencia'"
+							>
+								Web Development
+							</h3>
+							<p
+								class="text-[1vw] text-pretty first-letter:text-white first-letter:font-bold first-letter:text-xl"
+								style="font-family: Inter"
+							>
+								We specialize in creating modern and responsive web applications
+								using the latest technologies.
+							</p>
+						</div>
+
+						<div class="text-left">
+							<img src="./htmx.svg" class="!w-12 !h-auto" alt="" />
+							<h3
+								class="font-bold text-[1.2vw]"
+								style="font-family: 'De Valencia'"
+							>
+								E-commerce Solutions
+							</h3>
+							<p
+								class="text-[1vw] text-pretty first-letter:text-white first-letter:font-bold first-letter:text-xl"
+								style="font-family: Inter"
+							>
+								We design and develop custom e-commerce solutions for businesses
+								of all sizes.
+							</p>
+						</div>
+
+						<div class="text-left">
+							<img src="./htmx.svg" class="!w-12 !h-auto" alt="" />
+							<h3
+								class="font-bold text-[1.2vw]"
+								style="font-family: 'De Valencia'"
+							>
+								Mobile App Development
+							</h3>
+							<p
+								class="text-[1vw] text-pretty first-letter:text-white first-letter:font-bold first-letter:text-xl"
+								style="font-family: Inter"
+							>
+								We create custom mobile apps for Android and iOS devices.
+							</p>
+						</div>
+
+						<div class="text-left">
+							<img src="./htmx.svg" class="!w-12 !h-auto" alt="" />
+							<h3
+								class="font-bold text-[1.2vw]"
+								style="font-family: 'De Valencia'"
+							>
+								Web Design
+							</h3>
+							<p
+								class="text-[1vw] text-pretty first-letter:text-white first-letter:font-bold first-letter:text-xl"
+								style="font-family: Inter"
+							>
+								We specialize in creating modern and responsive web designs that
+								are tailored to your business needs.
+							</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div
+			class="w-2/3 mx-auto h-[5px] bg-blue-700 my-16 skew-x-6 rounded-tr-lg rounded-bl-lg"
+		></div>
+		<!-- the team wordart -->
+		<div class="w-full relative z-50">
+			<img
+				src="https://tailwind-sandy-iota.vercel.app/assets/wordart/the_team.png"
+				class="w-[90%] mx-auto"
+				alt=""
+			/>
+		</div>
+		<!-- the team section -->
+		<div
+			class="flex cards w-[85%] mx-auto *:flex *:w-1/4 *:h-max *:text-center *:font-inter *:font-bold *:px-5 *:flex-col *:text-black *:pt-8 overflow-visible *:bg-contain *:bg-no-repeat mt-8"
+		>
+			<div class="relative -rotate-12">
+				<img
+					src="https://tailwind-sandy-iota.vercel.app/assets/team_bg.png"
+					class="absolute top-0 left-0 w-full h-full z-[5]"
+					alt=""
+				/>
+				<h1 class="text-[1.3vw] uppercase relative z-20">
+					## sophia martinez ##
+				</h1>
+				<h6 class="text-[0.5vw] md:text-xs text-center text-gray-600 relative z-20 uppercase">
+					lead developer
+				</h6>
+				<p class="text-justify text-[0.99vw] font-grenze relative z-20">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+					dignissimos dolorem magni nobis exercitationem numquam totam velit,
+					ducimus earum sed.
+				</p>
+				<img
+					src="https://tailwind-sandy-iota.vercel.app/assets/1.svg"
+					class="w-full h-auto relative z-20 mb-2"
+					alt=""
+				/>
+			</div>
+			<div class="relative rotate-[13deg]">
+				<img
+					src="https://tailwind-sandy-iota.vercel.app/assets/team_bg.png"
+					class="absolute top-0 left-0 w-full h-full z-[5]"
+					alt=""
+				/>
+				<h1 class="text-[1.3vw] uppercase relative z-20">## liam johnson ##</h1>
+				<h6 class="text-[0.5vw] md:text-xs text-center text-gray-600 relative z-20 uppercase">
+					UI/UX Designer
+				</h6>
+				<p class="text-justify text-[0.99vw] font-grenze relative z-20">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+					dignissimos dolorem magni nobis exercitationem numquam totam velit,
+					ducimus earum sed.
+				</p>
+				<img
+					src="https://tailwind-sandy-iota.vercel.app/assets/2.svg"
+					class="w-full h-auto relative z-20 mb-2"
+					alt=""
+				/>
+			</div>
+			<div class="relative -rotate-[10deg]">
+				<img
+					src="https://tailwind-sandy-iota.vercel.app/assets/team_bg.png"
+					class="absolute top-0 left-0 w-full h-full z-[5]"
+					alt=""
+				/>
+				<h1 class="text-[1.3vw] uppercase relative z-20">## emma davis ##</h1>
+				<h6 class="text-[0.5vw] md:text-xs text-center text-gray-600 relative z-20 uppercase">
+					Content strategist
+				</h6>
+				<p class="text-justify text-[0.99vw] font-grenze relative z-20">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+					dignissimos dolorem magni nobis exercitationem numquam totam velit,
+					ducimus earum sed.
+				</p>
+				<img
+					src="https://tailwind-sandy-iota.vercel.app/assets/3.svg"
+					class="w-full h-auto relative z-20 mb-2"
+					alt=""
+				/>
+			</div>
+			<div class="relative rotate-6">
+				<img
+					src="https://tailwind-sandy-iota.vercel.app/assets/team_bg.png"
+					class="absolute top-0 left-0 w-full h-full z-[5]"
+					alt=""
+				/>
+				<h1 class="text-[1.3vw] uppercase relative z-20">## noah willson ##</h1>
+				<h6 class="text-[0.5vw] md:text-xs text-center text-gray-600 relative z-20 uppercase">
+					community manager
+				</h6>
+				<p class="text-justify text-[0.99vw] font-grenze relative z-20">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+					dignissimos dolorem magni nobis exercitationem numquam totam velit,
+					ducimus earum sed.
+				</p>
+				<img
+					src="https://tailwind-sandy-iota.vercel.app/assets/4.svg"
+					class="w-full h-auto relative z-20 mb-2"
+					alt=""
+				/>
+			</div>
+		</div>
+
+		<div class="w-full h-auto min-h-[50vh] md:min-h-[80vh] relative flex justify-center items-center">
+			<img src="https://tailwind-sandy-iota.vercel.app/assets/World Map.svg" class="w-full h-auto blur-[4px] absolute top-0 left-0" alt="">
+			<div class=" text-white text-center uppercase leading-[0.75]"><h1 class="text-[20vw] ">we are</h1>
+			<h5 class="text-[7.5vw] tracking-widest">here for you</h5></div>
+		</div>
+	<footer class="w-full min-h-[35vh] relative flex justify-center items-end">
+		<svg class="w-[100vw] h-auto  absolute bottom-0 left-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,0L34.3,26.7C68.6,53,137,107,206,138.7C274.3,171,343,181,411,165.3C480,149,549,107,617,117.3C685.7,128,754,192,823,224C891.4,256,960,256,1029,240C1097.1,224,1166,192,1234,154.7C1302.9,117,1371,75,1406,53.3L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+		<h1 class="relative z-50 text-black text-xl md:text-2xl lg:text-5xl pb-2 md:pb-5 font-grenze capitalize">&copy;2024 tailwind css course. All Rights Reserved</h1>
+	</footer>
+	</body>
+</html>

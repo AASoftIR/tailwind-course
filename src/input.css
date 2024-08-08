@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "pro";
+  src: url("../assets/font/Anonymous_Pro/AnonymousPro-Regular.ttf");
+}
+@font-face {
+  font-family: "valencia";
+  src: url("../assets/font/de-valencia/De\ Valencia\ \(beta\).otf");
+}
+@font-face {
+  font-family: "grenze";
+  src: url("../assets/font/Grenze/Grenze-SemiBold.ttf");
+}
+@font-face {
+  font-family: "inter";
+  src: url("../assets/font/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@keyframes mover {
+  from {
+    transform: translateX(5px) rotate(-90deg);
+    -webkit-transform: translateX(5px) rotate(-90deg);
+    -moz-transform: translateX(5px) rotate(-90deg);
+    -ms-transform: translateX(5px) rotate(-90deg);
+    -o-transform: translateX(5px) rotate(-90deg);
+  }
+  to {
+    transform: translateX(-10px) rotate(-90deg);
+    -webkit-transform: translateX(-10px) rotate(-90deg);
+    -moz-transform: translateX(-10px) rotate(-90deg);
+    -ms-transform: translateX(-10px) rotate(-90deg);
+    -o-transform: translateX(-10px) rotate(-90deg);
+  }
+}
+
+@keyframes moverY {
+  from {
+    transform: translateY(5px) rotate(-180deg);
+    -webkit-transform: translateY(5px) rotate(-180deg);
+    -moz-transform: translateY(5px) rotate(-180deg);
+    -ms-transform: translateY(5px) rotate(-180deg);
+    -o-transform: translateY(5px) rotate(-180deg);
+  }
+  to {
+    transform: translateY(-10px) rotate(-180deg);
+    -webkit-transform: translateY(-10px) rotate(-180deg);
+    -moz-transform: translateY(-10px) rotate(-180deg);
+    -ms-transform: translateY(-10px) rotate(-180deg);
+    -o-transform: translateY(-10px) rotate(-180deg);
+  }
+}
+
+.textClip {
+  background-image: url("../assets/text_bg_galaxy.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  text-overflow: clip;
+  -webkit-text-overflow: clip;
+  -moz-text-overflow: clip;
+}
+
+@layer components {
+  .divider {
+    @apply mb-1 ml-0 mr-auto mt-6 h-[3px] w-[80%] skew-x-[45deg] bg-white;
+  }
+  .overlay {
+    @apply absolute bottom-0 top-0 z-10 h-full w-full bg-blue-700 opacity-20;
+  }
+  .vertical {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+  }
+  .active {
+    @apply border-b-4 border-white;
+  }
+  .post-line {
+    @apply mx-4 mt-6 text-left font-inter text-lg text-white first-letter:text-6xl first-line:tracking-tighter md:mx-auto md:text-2xl;
+  }
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact US</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body
+    class="flex h-screen w-screen items-center justify-center overflow-hidden font-pro text-black dark:text-white"
+  >
+    <div class="arrow absolute left-16 top-8 z-30 scale-[2.2] md:top-1/2">
+      <a href="index.html" class="flex">
+        <div class="mx-2 rotate-[-90deg] animate-mover">
+          <svg
+            class="!h-auto !w-6 fill-black dark:fill-white"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 48.338 48.338"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                d="M26.436,2.3c-1.253-3.067-3.285-3.067-4.539,0l-7.654,18.739c-1.254,3.067-0.212,4.359,2.327,2.884
+		l2.867-1.666c0.955-0.555,1.428-0.158,1.221,0.927c-0.355,1.866-0.727,5.212-0.491,10.592c-0.099,4.477,0.316,8.115,0.642,10.216
+		c0.169,1.091,0.317,2.956,1.001,3.823c0.549,0.697,4.166,0.697,4.715,0c0.684-0.867,0.766-2.742,0.896-3.838
+		c0.285-2.396,0.713-6.558,0.747-10.201c0.052-5.459-0.273-8.746-0.567-10.574c-0.175-1.09,0.342-1.5,1.297-0.945
+		c0.786,0.457,1.784,1.036,2.869,1.666c2.539,1.475,3.582,0.184,2.328-2.884L26.436,2.3z"
+              />
+            </g>
+          </svg>
+        </div>
+
+        Go Back?</a
+      >
+    </div>
+    <div
+      class="absolute left-0 top-0 z-10 h-screen w-screen bg-[url(https://tailwind-sandy-iota.vercel.app/assets/contact_bg.svg)] bg-cover bg-center"
+      alt=""
+    ></div>
+    <div
+      class="relative z-50 flex h-[55%] w-[90%] flex-col items-center justify-center overflow-visible md:h-4/5 md:w-2/3"
+    >
+      <div
+        class="flex w-full items-center justify-between rounded-t-3xl bg-veryDark/30 px-4 py-2 dark:bg-veryDark"
+        id="header"
+      >
+        <div
+          class="dots flex h-full w-[2.5rem] items-center justify-between *:h-2 *:w-2 *:rounded-full *:hover:cursor-pointer"
+        >
+          <span class="relative scale-[1.5] bg-red-500">
+            <div
+              class="line absolute left-[1px] top-[50%] h-[1px] w-[70%] rotate-45 bg-black/70"
+            ></div>
+            <div
+              class="line absolute left-[1px] top-[50%] h-[1px] w-[70%] -rotate-45 bg-black/70"
+            ></div>
+          </span>
+          <span
+            class="flex scale-[1.5] items-center justify-center bg-yellow-400"
+          >
+            <div class="h-[1px] w-[70%] bg-black/70"></div>
+          </span>
+          <span class="scale-[1.5] bg-green-600"></span>
+        </div>
+        <div class="h1 text-center text-3xl text-white">Get In Touch</div>
+        <div class=""></div>
+      </div>
+
+      <div
+        class="h-[90%] w-full rounded-b-3xl bg-[rgba(255,255,255,0.5)] px-8 py-2 dark:bg-[rgba(0,0,0,0.46)]"
+      >
+        <div
+          class="flex flex-col gap-y-4 divide-y-2 divide-gray-100 dark:divide-gray-700"
+        >
+          <div class="flex gap-x-6 pt-2">
+            <h2 class="text-2xl">To:</h2>
+            <div class="rounded-xl bg-[#0E2A47] px-2 py-2">
+              tailwindcourse@gmail.com
+            </div>
+          </div>
+
+          <div class="flex gap-x-8 pt-2 md:gap-x-1">
+            <h2 class="w-1/12 text-2xl">From:</h2>
+            <input
+              type="text"
+              class="ml-4 h-full w-8/12 bg-transparent focus:outline-none focus:ring-0 md:ml-1 md:w-11/12"
+            />
+          </div>
+          <div class="flex gap-x-8 pt-2 md:gap-x-1">
+            <h2 class="w-2/12 text-2xl">Subject:</h2>
+            <input
+              type="text"
+              class="ml-4 h-full w-8/12 bg-transparent focus:outline-none focus:ring-0 md:ml-1 md:w-11/12"
+            />
+          </div>
+          <div class="flex flex-col gap-x-1 pt-2">
+            <h2 class="w-auto text-2xl">Message:</h2>
+            <textarea
+              type="text"
+              class="full h-[35px] resize-none bg-transparent focus:outline-none focus:ring-0 md:h-[220px]"
+            ></textarea>
+          </div>
+          <div class="flex flex-col items-end justify-end gap-x-1 py-2">
+            <button class="rounded-lg bg-gray-100 px-8 py-2 dark:bg-gray-800">
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
