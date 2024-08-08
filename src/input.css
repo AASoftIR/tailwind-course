@@ -4,19 +4,19 @@
 
 @font-face {
   font-family: "pro";
-  src: url("../assets/font/Anonymous_Pro/AnonymousPro-Regular.ttf");
+  src: url("https://tailwind-sandy-iota.vercel.app/assets/font/Anonymous_Pro/AnonymousPro-Regular.ttf");
 }
 @font-face {
   font-family: "valencia";
-  src: url("../assets/font/de-valencia/De\ Valencia\ \(beta\).otf");
+  src: url("https://tailwind-sandy-iota.vercel.app/assets/font/de-valencia/De\ Valencia\ \(beta\).otf");
 }
 @font-face {
   font-family: "grenze";
-  src: url("../assets/font/Grenze/Grenze-SemiBold.ttf");
+  src: url("https://tailwind-sandy-iota.vercel.app/assets/font/Grenze/Grenze-SemiBold.ttf");
 }
 @font-face {
   font-family: "inter";
-  src: url("../assets/font/Inter/Inter-VariableFont_slnt\,wght.ttf");
+  src: url("https://tailwind-sandy-iota.vercel.app/assets/font/Inter/Inter-VariableFont_slnt\,wght.ttf");
 }
 
 @keyframes mover {
@@ -54,7 +54,7 @@
 }
 
 .textClip {
-  background-image: url("../assets/text_bg_galaxy.jpg");
+  background-image: url("https://tailwind-sandy-iota.vercel.app/assets/text_bg_galaxy.jpg");
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
